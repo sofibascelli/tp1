@@ -16,6 +16,29 @@
 }
 
 header{
-    
-    color: grey;
+    grid-area: header;
+    background-color: grey;
+}
+nav {
+    grid-area: nav;
+    background-color: gray;
+}
+main {
+    grid-area: main;
+    background-color: beige;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+}
+header,
+nav,
+main,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
