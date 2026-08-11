@@ -49,18 +49,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 15px;
 }
 nav{
     grid-area: nav;
     background-color: lightgray;
     border: 2px solid black;
     padding: 5px;
+    border-radius: 15px;
 }
 main{
     grid-area: main;
     background-color: white;
     border: 2px solid black;
     padding: 20px;
+    border-radius: 15px;
 }
 footer{
     grid-area: footer;
@@ -70,6 +73,7 @@ footer{
      display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 15px;
 }
 header,
 nav,
