@@ -1,0 +1,100 @@
+.pagina{
+    background-color:  rgb(241, 238, 238);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+    display: grid;
+    gap: 10px;
+
+}
+
+ body {
+            font-family: sans-serif;
+            color: rgb(50, 47, 47);
+            
+        }
+img { 
+    max-width: 100%;
+    height: auto; 
+    border: 3px solid black;
+       margin: 20px;
+}
+        h1{
+             
+            color: rgb(80, 71, 71);
+                text-align: center;
+        }
+        h2{
+            
+            color: rgb(80, 71, 71);
+               text-align: center;
+        }
+h3{
+        
+            color: rgb(80, 71, 71); 
+}
+p{
+           
+            color: rgb(80, 71, 71);
+}
+header{
+    grid-area: header;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+nav{
+    grid-area: nav;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+}
+main{
+    grid-area: main;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+     
+}
+footer{
+    grid-area: footer;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+     
+    
+}
+header,
+nav,
+main,
+footer{
+
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.encabezado{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
