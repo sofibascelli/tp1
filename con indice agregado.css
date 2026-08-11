@@ -3,39 +3,80 @@
     border: 2px solid black;
     padding: 15px;
     margin: 20px auto;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header header"
     "nav main"
     "footer footer";
     display: grid;
+    gap: 10px;
 
 }
 
+ body {
+            font-family: sans-serif;
+            color: darkgrey;
+            
+        }
+img {
+     border: 3px solid black;
+       margin: 20px;
+}
+        h1{
+             font-family: sans-serif;
+            color: darkgrey;
+                text-align: center;
+        }
+        h2{
+             font-family: sans-serif;
+            color: darkgrey;
+               text-align: center;
+        }
+h3{
+         font-family: sans-serif;
+            color: darkgrey;
+}
+p{
+           font-family: sans-serif;
+            color: darkgrey;
+}
 header{
     grid-area: header;
-    background-color: grey;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 nav{
     grid-area: nav;
-    background-color: gray;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 5px;
 }
 main{
     grid-area: main;
-    background-color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
 }
 footer{
     grid-area: footer;
-    background-color: gray;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 header,
 nav,
 main,
 footer{
-    color: white;
-    font-size: 30px;
+
+    color: lightgray;
+    font-size: 20px;
     font-weight: bold;
 }
