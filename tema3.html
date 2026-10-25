@@ -3,26 +3,36 @@
         <title> empresarios que hicieron historia: </title>
         <link rel="stylesheet" href="con indice agregado.css">
     </head>
+
     <body>
          <div class="pagina">
-        <header>
+        
+          <header>
 
       <h1> Web.Bascelli</h1>
       <img src="img/chat.jpg" alt="wiki" width ="100">
         </header>
-      <nav>
-      <ul>
-        <li><a href ="#introduccion">Introduccion</a></li>
-        <li><a href ="#carrera">carrera</a></li>
-        <li><a href ="#1893">Pánico de 1893 y elecciones de 1896</a></li>
-        <li><a href ="#tesla">La estación Wardenclyffe de Nikola Tesla: 1900</a></li>
-        <li><a href ="#securities">Northern Securities: 1901-1904</a></li>
-      </ul>  
-            </nav>
+
+     <aside>
+      <nav aria-label="Índice de contenidos">
+        <h2>Índice</h2>
+        <ul id="indice-automatico"></ul>
+      </nav>
+
+      <section class="panel-apariencia">
+        <h3>Apariencia</h3>
+        <button id="btn-modo-oscuro">Modo oscuro</button>
+        
+        <div class="botones-tamanio">
+          <button class="btn-tamanio" data-tamanio="pequeno">Pequeño</button>
+          <button class="btn-tamanio" data-tamanio="estandard">Estándar</button>
+          <button class="btn-tamanio" data-tamanio="grande">Grande</button>
+        </div>
+      </section>
+    </aside>
         
         <main>
             <section>
-              <div class="encabezado">
                 <h2 id="introduccion">Introduccion</h2>
               <img src="img/morgan.jpg" alt="morgan" width="160">
      
