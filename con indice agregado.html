@@ -33,12 +33,10 @@
     </aside>
 
     <main>
-      <section>
-        <div class="encabezado">
-          <h2 id="introduccion">Introduccion</h2>
           <img src="img/rockefeller.jpg" alt="Rockefeller" width="160">
 
-        </div>
+        <section>
+          <h2 id="introduccion">Introduccion</h2>
         <p> John Davison Rockefeller Nacio el 8 de julio de 1839 y murió el 23 de mayo de 1937; fue un magnate
           empresarial
           estadounidense. Formó parte del grupo de empresarios conocido como «barones ladrones» de la Edad Dorada de la
@@ -75,6 +73,7 @@
           continuó controlando la industria petrolífera en esta última región durante más de seis décadas tras su
           fallecimiento.</p>
       </section>
+
       <section>
         <h2 id="inicio">inicios</h2>
         <h3 id="infancia">infancia</h3>
@@ -96,7 +95,8 @@
           le enseñó el valor de las inversiones y los intereses. Desde entonces comenzó a registrar cuidadosamente sus
           ganancias en una libreta llamada “Registro A”, desarrollando la mentalidad financiera que más tarde lo
           convertiría en un gran empresario.</p>
-        <h3 id="temprana edad">temprana edad</h3>
+
+        <h3 id="temprana-edad">temprana edad</h3>
         <p> El interés de John D. Rockefeller por los negocios creció durante sus estudios en la escuela comercial de
           Cleveland. A los dieciséis años consiguió su primer trabajo en una empresa de comercio de granos, donde
           destacó
@@ -113,8 +113,9 @@
           El negocio tuvo un gran éxito: ganó 4000 dólares el primer año y cuadruplicó esa cifra el segundo. A pesar de
           ello, Rockefeller no estaba satisfecho y aspiraba a alcanzar metas mucho mayores.</p>
       </section>
+
       <section>
-        <h2 id="la conquista de cleveland y la expansion nacional"> la conquista de cleveland y la expansion nacional
+        <h2 id="la-conquista-de-cleveland"> la conquista de cleveland y la expansion nacional
         </h2>
         <p>Después de la Guerra de Secesión, Cleveland se convirtió en uno de los principales centros de refinación de
           petróleo de Estados Unidos. En ese contexto, John D. Rockefeller aprovechó la sobreproducción de queroseno y
@@ -136,8 +137,9 @@
           Con un equipo de administradores y financieros muy capaces, Rockefeller convirtió a Standard Oil en un enorme
           monopolio y pasó a ser considerado prácticamente el dueño de la industria petrolera de Estados Unidos.</p>
       </section>
+
       <section>
-        <h2 id="Standard Oil"> La creación de la Standard Oil Trust</h2>
+        <h2 id="Standard-Oil"> La creación de la Standard Oil Trust</h2>
         <p>La creación de la Standard Oil Trust fue la estrategia con la que John D. Rockefeller consolidó el control
           casi
           total de la industria petrolera. Para evitar acusaciones de monopolio, creó en 1882 un “trust”, es decir, una
@@ -163,7 +165,29 @@
           para automóviles. Todo esto convirtió a Rockefeller en el hombre más rico de Estados Unidos y posiblemente del
           mundo en esa época.</p>
       </section>
+
+     <section class="seccion-discusion">
+      <h2 id="discusion">Discusión</h2>
+      <form id="form-comentario"><div class="campo-form">
+            <label for="nombre-usuario">Nombre:</label>
+            <input type="text" id="nombre-usuario" required>
+          </div>
+
+          <div class="campo-form">
+            <label for="texto-comentario">Comentario:</label>
+            <textarea id="texto-comentario" rows="4" required></textarea>
+            <span id="contador-caracteres">0 / 250</span>
+          </div>
+
+          <button type="submit" id="btn-enviar">Enviar comentario</button>
+        </form>
+
+        <p id="aviso-form" class="aviso" aria-live="polite"></p>
+
+        <ul id="lista-comentarios"></ul>
+      </section>
     </main>
+    
     <footer>
       <a href="tema2.html"> Elun musk</a>
 
