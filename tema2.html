@@ -3,26 +3,32 @@
         <title> empresarios que hicieron historia: </title>
         <link rel="stylesheet" href="con indice agregado.css">
     </head>
+
     <body>
         <div class="pagina">
+
       <header>
         <h1> Web.Bascelli </h1>
       <img src="img/chat.jpg" alt="wiki" width ="100">
       </header>
-      <nav>
-     <ul>
-    <li><a href="#introduccion">Introducción</a></li>
-    <li><a href="#bibliografia">Bibliografía</a></li>
-    <li><a href="#trayectoria-empresarial">Trayectoria empresarial</a>
-        <ul>
-            <li><a href="#zip2">Zip2</a></li>
-            <li><a href="#x.com-paypal">X.com y PayPal</a></li>
-            <li><a href="#spacex">SpaceX</a></li>
-            <li><a href="#tesla">Tesla</a></li>
-        </ul>
-    </li>
-</ul>
-</nav>
+      
+      <aside>
+      <nav aria-label="Índice de contenidos">
+        <h2>Índice</h2>
+        <ul id="indice-automatico"></ul>
+      </nav>
+
+      <section class="panel-apariencia">
+        <h3>Apariencia</h3>
+        <button id="btn-modo-oscuro">Modo Oscuro</button>
+        
+        <div class="botones-tamanio">
+          <button class="btn-tamanio" data-tamanio="pequeno">Pequeño</button>
+          <button class="btn-tamanio" data-tamanio="estandard">Estándar</button>
+          <button class="btn-tamanio" data-tamanio="grande">Grande</button>
+        </div>
+      </section>
+    </aside>
       
       <main>
         <section>
