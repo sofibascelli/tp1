@@ -7,7 +7,7 @@
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header header"
-    "nav main"
+    "aside main"
     "footer footer";
     display: grid;
     gap: 10px;
@@ -55,8 +55,8 @@ header{
     justify-content: space-between;
     border-radius: 15px;
 }
-nav{
-    grid-area: nav;
+aside{
+    grid-area: aside;
     background-color: white;
     border: 2px solid black;
     padding: 20px;
@@ -87,14 +87,139 @@ nav,
 main,
 footer{
 
-    color: lightgray;
+    color: rgb(50, 47, 47);
 }
 
 .encabezado{
-    grid-area: main;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
 
+}
+
+main h2,
+main h3{
+    cursor: pointer;
+    user-select: none;
+}
+
+.panel-apariencia {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+.botones-tamanio {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.button-tamanio.activo, 
+button.activo {
+    background-color: rgb(80, 71, 71);
+    color: white;
+    font-weight: bold;
+}
+
+main.texto-pequeno, main.texto-pequeno p, main.texto-pequeno li {
+    font-size: 12px;
+}
+
+main.texto-estandard, main.texto-estandard p, main.texto-estandard li {
+    font-size: 16px;
+}
+
+main.texto-grande, main.texto-grande p, main.texto-grande li {
+    font-size: 20px;
+}
+
+.pagina.modo-oscuro {
+    background-color: rgb(30, 30, 30);
+    border-color: rgb(200, 200, 200);
+}
+
+.pagina.modo-oscuro header, 
+.pagina.modo-oscuro footer {
+    background-color: rgb(45, 45, 45);
+    border-color: rgb(200, 200, 200);
+    color: rgb(220, 220, 220);
+}
+
+.pagina.modo-oscuro aside, 
+.pagina.modo-oscuro main {
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(200, 200, 200);
+    color: rgb(220, 220, 220);
+}
+
+.pagina.modo-oscuro h1, 
+.pagina.modo-oscuro h2, 
+.pagina.modo-oscuro h3, 
+.pagina.modo-oscuro p, 
+.pagina.modo-oscuro body,
+.pagina.modo-oscuro label {
+    color: rgb(220, 220, 220);
+}
+
+.pagina.modo-oscuro a {
+    color: rgb(100, 180, 255);
+}
+
+.seccion-discusion form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo-form input, 
+.campo-form textarea {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input.error, 
+textarea.error {
+    border: 2px solid red;
+    background-color: rgb(255, 230, 230);
+}
+
+.aviso {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#lista-comentarios {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#lista-comentarios li {
+    background: rgba(0,0,0,0.03);
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-borrar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
 }
