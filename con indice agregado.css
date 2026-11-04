@@ -17,7 +17,9 @@
  body {
             font-family: sans-serif;
             color: rgb(50, 47, 47);
-            
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
         }
 img { 
     max-width: 100%;
@@ -98,8 +100,7 @@ footer{
 
 }
 
-main h2,
-main h3{
+main h2{
     cursor: pointer;
     user-select: none;
 }
@@ -110,61 +111,63 @@ main h3{
     padding-top: 15px;
 }
 
-.botones-tamanio {
+.boton-tamanio {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
 
-.button-tamanio.activo, 
+.boton-tamanio.activo, 
 button.activo {
     background-color: rgb(80, 71, 71);
     color: white;
     font-weight: bold;
 }
 
-main.texto-pequeno, main.texto-pequeno p, main.texto-pequeno li {
-    font-size: 12px;
+body.tamanio-pequeno main {
+  font-size: 14px;
 }
 
-main.texto-estandard, main.texto-estandard p, main.texto-estandard li {
-    font-size: 16px;
+body.tamanio-medio main {
+  font-size: 16px;
 }
 
-main.texto-grande, main.texto-grande p, main.texto-grande li {
-    font-size: 20px;
+body.tamanio-grande main {
+  font-size: 20px;
+} 
+body.modo-oscuro {
+  background-color: rgb(20, 20, 20);
 }
 
-.pagina.modo-oscuro {
-    background-color: rgb(30, 30, 30);
-    border-color: rgb(200, 200, 200);
+body.modo-oscuro .pagina {
+  background-color: rgb(30, 30, 30);
+  border-color: rgb(200, 200, 200);
 }
 
-.pagina.modo-oscuro header, 
-.pagina.modo-oscuro footer {
-    background-color: rgb(45, 45, 45);
-    border-color: rgb(200, 200, 200);
-    color: rgb(220, 220, 220);
+body.modo-oscuro header, 
+body.modo-oscuro footer {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
 }
 
-.pagina.modo-oscuro aside, 
-.pagina.modo-oscuro main {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(200, 200, 200);
-    color: rgb(220, 220, 220);
+body.modo-oscuro aside, 
+body.modo-oscuro main {
+  background-color: rgb(40, 40, 40);
+  border-color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
 }
 
-.pagina.modo-oscuro h1, 
-.pagina.modo-oscuro h2, 
-.pagina.modo-oscuro h3, 
-.pagina.modo-oscuro p, 
-.pagina.modo-oscuro body,
-.pagina.modo-oscuro label {
-    color: rgb(220, 220, 220);
+body.modo-oscuro h1, 
+body.modo-oscuro h2, 
+body.modo-oscuro h3, 
+body.modo-oscuro p, 
+body.modo-oscuro label {
+  color: rgb(220, 220, 220);
 }
 
-.pagina.modo-oscuro a {
-    color: rgb(100, 180, 255);
+body.modo-oscuro a {
+  color: rgb(100, 180, 255);
 }
 
 .seccion-discusion form {
@@ -180,14 +183,21 @@ main.texto-grande, main.texto-grande p, main.texto-grande li {
     gap: 5px;
 }
 
-.campo-form input, 
+.campo-form input { padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+} 
 .campo-form textarea {
     padding: 8px;
     border: 1px solid black;
     border-radius: 4px;
 }
 
-input.error, 
+input.error{
+     border: 2px solid red;
+    background-color: rgb(255, 230, 230);
+}
+
 textarea.error {
     border: 2px solid red;
     background-color: rgb(255, 230, 230);
@@ -214,7 +224,7 @@ textarea.error {
     position: relative;
 }
 
-.btn-borrar {
+.boton-borrar {
     background-color: #ff4d4d;
     color: white;
     border: none;
