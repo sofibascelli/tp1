@@ -14,6 +14,7 @@ subtitulosH2.forEach(function (h2) {
   }
 });
 
+//alterna el tema de la página entre claro y oscuro
 const botonModoOscuro = document.querySelector("#modo-oscuro");
 
 if (botonModoOscuro) {
@@ -29,6 +30,7 @@ if (botonModoOscuro) {
 }
 
 
+//permite cambiar el tamaño de la letra entre pequeño, estandard y grande
 const botonesTamanio = document.querySelectorAll(".btn-tamanio");
 
 botonesTamanio.forEach(function (btn) {
@@ -52,6 +54,7 @@ botonesTamanio.forEach(function (btn) {
   });
 });
 
+//esto permite que al tocar el subtitulo  el contenido de cada seccion se oculte o se muestre
 const secciones = document.querySelectorAll("main section");
 
 secciones.forEach(function (seccion) {
@@ -63,6 +66,7 @@ secciones.forEach(function (seccion) {
   }
 });
 
+//por último, esto permite validar la cantidad de caracteres, la validacion de campos, crear los comentarios y poder eliminarlos
 const formComentario = document.querySelector("#form-comentario");
 const nombreUsuario = document.querySelector("#nombre-usuario");
 const textoComentario = document.querySelector("#texto-comentario");
