@@ -105,19 +105,27 @@ main h2{
     user-select: none;
 }
 
+main section.plegada p,
+main section.plegada h3,
+main section.plegada form,
+main section.plegada #lista-comentarios,
+main section.plegada #aviso-form {
+  display: none;
+}
+
 .panel-apariencia {
     margin-top: 20px;
     border-top: 1px solid black;
     padding-top: 15px;
 }
 
-.boton-tamanio {
+.botones-tamanio {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
 
-.boton-tamanio.activo, 
+.btn-tamanio.activo, 
 button.activo {
     background-color: rgb(80, 71, 71);
     color: white;
@@ -128,45 +136,45 @@ body.tamanio-pequeno main {
   font-size: 14px;
 }
 
-body.tamanio-medio main {
+body.tamanio-estandard main {
   font-size: 16px;
 }
 
 body.tamanio-grande main {
   font-size: 20px;
 } 
-body.modo-oscuro {
+body.oscuro {
   background-color: rgb(20, 20, 20);
 }
 
-body.modo-oscuro .pagina {
+body.oscuro .pagina {
   background-color: rgb(30, 30, 30);
   border-color: rgb(200, 200, 200);
 }
 
-body.modo-oscuro header, 
-body.modo-oscuro footer {
+body.oscuro header, 
+body.oscuro footer {
   background-color: rgb(45, 45, 45);
   border-color: rgb(200, 200, 200);
   color: rgb(220, 220, 220);
 }
 
-body.modo-oscuro aside, 
-body.modo-oscuro main {
+body.oscuro aside, 
+body.oscuro main {
   background-color: rgb(40, 40, 40);
   border-color: rgb(200, 200, 200);
   color: rgb(220, 220, 220);
 }
 
-body.modo-oscuro h1, 
-body.modo-oscuro h2, 
-body.modo-oscuro h3, 
-body.modo-oscuro p, 
-body.modo-oscuro label {
+body.oscuro h1, 
+body.oscuro h2, 
+body.oscuro h3, 
+body.oscuro p, 
+body.oscuro label {
   color: rgb(220, 220, 220);
 }
 
-body.modo-oscuro a {
+body.oscuro a {
   color: rgb(100, 180, 255);
 }
 
@@ -183,7 +191,8 @@ body.modo-oscuro a {
     gap: 5px;
 }
 
-.campo-form input { padding: 8px;
+.campo-form input {
+     padding: 8px;
     border: 1px solid black;
     border-radius: 4px;
 } 
