@@ -100,9 +100,22 @@ footer{
 
 }
 
-main h2{
+main h2 {
     cursor: pointer;
     user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h2::after {
+    content: "▼";
+    font-size: 0.8em;
+    transition: transform 0.2s ease;
+}
+
+main section.plegada h2::after {
+    content: "►";
 }
 
 main section.plegada p,
