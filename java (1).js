@@ -1,3 +1,4 @@
+// genera de forma automática un índice de navegación dinámico a partir de los subtítulos h2 que poseen un id
 const indiceAutomatico = document.querySelector("#indice-automatico");
 const subtitulosH2 = document.querySelectorAll("main section h2");
 
@@ -42,8 +43,8 @@ botonesTamanio.forEach(function (btn) {
 
   btn.addEventListener("click", function () {
     
-    botonesTamanio.forEach(function (b) {
-      b.classList.remove("activo");
+    botonesTamanio.forEach(function (boton) {
+      boton.classList.remove("activo");
     });
     btn.classList.add("activo");
 
